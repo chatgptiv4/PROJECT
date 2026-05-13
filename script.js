@@ -16,9 +16,9 @@ if (navToggle && navLinks) {
 const courseButtons = document.querySelectorAll("[data-course]");
 const courseOutput = document.querySelector("#course-output");
 const courseMessages = {
-  "Cyber Security": "Cyber Security focuses on protecting systems, networks, data, and users from digital threats.",
   "Agricultural Technology": "Agricultural Technology focuses on tools and systems that make farming smarter and more productive.",
-  "Computer Science": "Computer Science focuses on software, problem solving, data processing, and intelligent systems."
+  "Computer Science": "Computer Science focuses on programming, software development, databases, networking, and problem solving.",
+  "Information Technology": "Information Technology focuses on supporting computer systems, networks, databases, and digital services."
 };
 
 courseButtons.forEach((button) => {
