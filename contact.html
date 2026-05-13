@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | FUNATO Computer Science</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">FUNATO Computer Science</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programmes.html">Programmes</a></li>
+        <li><a href="campus.html">Campus Life</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero compact">
+      <p class="eyebrow">Contact us</p>
+      <h1>Send an enquiry to the department</h1>
+      <p>Use the sample form below to demonstrate form layout, validation, and JavaScript feedback.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <form id="contact-form" class="contact-form" novalidate>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your full name" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="name@example.com" required>
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic" required>
+          <option value="">Choose a topic</option>
+          <option>Admission</option>
+          <option>Programmes</option>
+          <option>Campus visit</option>
+          <option>Assignment feedback</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+
+        <button class="button primary" type="submit">Send message</button>
+        <p id="form-message" class="form-message" role="status"></p>
+      </form>
+
+      <aside class="contact-card">
+        <h2>Department information</h2>
+        <p><strong>Course code:</strong> CYB 103</p>
+        <p><strong>Location:</strong> Owerri, Imo State</p>
+        <p><strong>Email:</strong> csdept@funato.example</p>
+        <p><strong>Office hours:</strong> Monday - Friday, 9:00 AM - 4:00 PM</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> FUNATO Computer Science Student Project. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

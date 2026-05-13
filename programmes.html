@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmes | FUNATO Computer Science</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html">FUNATO Computer Science</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="programmes.html">Programmes</a></li>
+        <li><a href="campus.html">Campus Life</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-hero compact">
+      <p class="eyebrow">Academic programmes</p>
+      <h1>Courses that connect agriculture and technology</h1>
+      <p>Students learn through lectures, lab sessions, group assignments, and community-focused digital projects.</p>
+    </section>
+
+    <section class="section cards-row">
+      <article class="programme-card">
+        <h2>B.Sc. Computer Science</h2>
+        <p>Learn programming, algorithms, web technologies, databases, computer networks, and software engineering.</p>
+        <button class="button small" data-course="Computer Science">Show focus</button>
+      </article>
+      <article class="programme-card">
+        <h2>B.Tech. Agricultural Technology</h2>
+        <p>Explore mechanised farming, smart irrigation, agribusiness systems, and sustainable production.</p>
+        <button class="button small" data-course="Agricultural Technology">Show focus</button>
+      </article>
+      <article class="programme-card">
+        <h2>B.Sc. Information Technology</h2>
+        <p>Study systems administration, application support, databases, networking, and user-focused technology services.</p>
+        <button class="button small" data-course="Information Technology">Show focus</button>
+      </article>
+    </section>
+
+    <section class="section table-section">
+      <h2>Sample first-year timetable</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Day</th><th>Course</th><th>Time</th><th>Venue</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>CYB 103 Web Technologies</td><td>9:00 AM</td><td>ICT Lab 1</td></tr>
+            <tr><td>Wednesday</td><td>CSC 101 Computer Fundamentals</td><td>11:00 AM</td><td>Lecture Hall A</td></tr>
+            <tr><td>Friday</td><td>GST 111 Communication Skills</td><td>1:00 PM</td><td>Main Auditorium</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="course-output" class="notice">Click a programme button to see its focus area.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> FUNATO Computer Science Student Project. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
